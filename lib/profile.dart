@@ -47,10 +47,12 @@ class _ProfileState extends State<Profile> {
   String _city = '';
   String _description = '';
   File? _profile;
+  // ignore: non_constant_identifier_names
   String profile_url = '';
   String daterate = '';
   String measurements = '';
   String bodyType = '';
+  // ignore: non_constant_identifier_names
   String profile_db = '';
 
   void _pickProfile() async {
