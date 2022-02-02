@@ -46,6 +46,7 @@ class DatabaseService {
   Future<void> updateProfile(String profile, String daterate,
       String measurements, String bodyType) async {
     return await usersCollection.doc(uid).update({
+      'profile': profile,
       'daterate': daterate,
       'measurements': measurements,
       'bodyType': bodyType,

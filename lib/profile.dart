@@ -821,6 +821,7 @@ class _ProfileState extends State<Profile> {
                                           profile_url =
                                               await ref.getDownloadURL();
                                         }
+                                        print('test: $profile_url');
                                         await DatabaseService(uid: _uid)
                                             .updateData(
                                                 _name,
